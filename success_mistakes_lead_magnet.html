@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Mistakes Successful Guys Make That Kill Attraction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+            background: #0f0f0f;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 25%, #404040 50%, #2d2d2d 75%, #1a1a1a 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(0, 0, 0, 0.4) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.03) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .money-icon {
+            position: absolute;
+            font-size: 2.5rem;
+            opacity: 0;
+            animation: float-money 15s ease-in-out infinite;
+            color: rgba(255, 255, 255, 0.08);
+        }
+        
+        .money-icon:nth-child(1) { 
+            top: 20%; 
+            left: 10%; 
+            animation-delay: 0s; 
+        }
+        .money-icon:nth-child(2) { 
+            top: 60%; 
+            right: 15%; 
+            animation-delay: 5s; 
+        }
+        .money-icon:nth-child(3) { 
+            bottom: 30%; 
+            left: 20%; 
+            animation-delay: 10s; 
+        }
+        
+        @keyframes float-money {
+            0%, 90%, 100% { 
+                opacity: 0; 
+                transform: translateY(30px) rotate(0deg); 
+            }
+            10%, 80% { 
+                opacity: 0.08; 
+                transform: translateY(0) rotate(15deg); 
+            }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            color: white;
+        }
+        
+        .hero .highlight {
+            color: #dc2626;
+            text-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+        }
+        
+        .hook {
+            font-size: 1.8rem;
+            color: #d1d5db;
+            margin-bottom: 40px;
+            font-weight: 600;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .subheading {
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 50px;
+            font-weight: 400;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .mistakes-revealer {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #4b5563;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px auto;
+            max-width: 900px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        
+        .mistakes-revealer h3 {
+            color: #f3f4f6;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            text-align: center;
+            text-shadow: 0 0 15px rgba(243, 244, 246, 0.2);
+        }
+        
+        .mistakes-list {
+            list-style: none;
+            color: white;
+        }
+        
+        .mistake-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(31, 41, 55, 0.6);
+            border-radius: 10px;
+            border-left: 4px solid #dc2626;
+            font-size: 1.2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mistake-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(75, 85, 99, 0.2), transparent);
+            animation: mistake-reveal 3s ease-in-out infinite;
+        }
+        
+        @keyframes mistake-reveal {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        .mistake-item .mistake-title {
+            color: #f9fafb;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .mistake-item .mistake-detail {
+            color: #d1d5db;
+        }
+        
+        .result-highlight {
+            background: rgba(31, 41, 55, 0.8);
+            border: 2px solid #dc2626;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .result-highlight h4 {
+            color: #dc2626;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(220, 38, 38, 0.3);
+        }
+        
+        .result-highlight p {
+            font-size: 1.3rem;
+            color: #f3f4f6;
+            font-weight: 500;
+        }
+        
+        .system-section {
+            background: linear-gradient(135deg, #111827 0%, #000000 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .system-section h2 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            font-weight: 900;
+            color: #f9fafb;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .system-text {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #d1d5db;
+        }
+        
+        .scarcity-timer {
+            background: rgba(31, 41, 55, 0.6);
+            border: 2px solid #dc2626;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+        
+        .timer-text {
+            font-size: 1.6rem;
+            color: #dc2626;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .time-unit {
+            text-align: center;
+        }
+        
+        .time-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: white;
+            display: block;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .time-label {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .value-stack {
+            background: rgba(31, 41, 55, 0.7);
+            border: 2px solid #4b5563;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            backdrop-filter: blur(5px);
+        }
+        
+        .value-stack h3 {
+            color: #f9fafb;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 0 0 15px rgba(249, 250, 251, 0.2);
+        }
+        
+        .value-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(55, 65, 81, 0.5);
+            border-radius: 10px;
+        }
+        
+        .value-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: #9ca3af;
+        }
+        
+        .value-text {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .value-text strong {
+            color: #f3f4f6;
+        }
+        
+        .price-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .original-price {
+            font-size: 2rem;
+            color: #9ca3af;
+            text-decoration: line-through;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+        
+        .sale-price {
+            font-size: 4rem;
+            color: #dc2626;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .price-note {
+            color: #d1d5db;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #dc2626, #991b1b);
+            color: white;
+            padding: 25px 60px;
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            box-shadow: 0 20px 60px rgba(220, 38, 38, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 30px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(220, 38, 38, 0.5);
+        }
+        
+        .guarantee-section {
+            background: rgba(31, 41, 55, 0.6);
+            border: 2px solid #4b5563;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .guarantee-section h4 {
+            color: #f3f4f6;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .guarantee-section p {
+            color: #d1d5db;
+            font-size: 1.1rem;
+        }
+        
+        .social-proof {
+            background: rgba(17, 24, 39, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        
+        .testimonial {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(31, 41, 55, 0.6);
+            border-radius: 10px;
+            border-left: 4px solid #6b7280;
+        }
+        
+        .testimonial-text {
+            color: #f3f4f6;
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            color: #9ca3af;
+            font-weight: 600;
+        }
+        
+        .final-urgency {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .final-urgency h2 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            color: #f9fafb;
+        }
+        
+        .final-urgency-text {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #d1d5db;
+        }
+        
+        .purchase-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(31, 41, 55, 0.95);
+            border: 2px solid #dc2626;
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: white;
+            font-size: 0.85rem;
+            max-width: 280px;
+            z-index: 1000;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+        
+        .purchase-notification.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .purchase-notification .notification-icon {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: #dc2626;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: notification-pulse 2s infinite;
+        }
+        
+        @keyframes notification-pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.2); }
+        }
+        
+        .purchase-notification .buyer-info {
+            font-weight: 600;
+            color: #f3f4f6;
+            margin-bottom: 2px;
+        }
+        
+        .purchase-notification .purchase-details {
+            color: #9ca3af;
+            font-size: 0.8rem;
+        }
+        
+        .urgency-banner {
+            background: linear-gradient(90deg, #dc2626, #991b1b);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            animation: urgency-pulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes urgency-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .limited-spots {
+            background: rgba(220, 38, 38, 0.2);
+            border: 2px solid #dc2626;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .limited-spots h4 {
+            color: #dc2626;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        
+        .spots-counter {
+            font-size: 2rem;
+            color: #dc2626;
+            font-weight: 900;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hook {
+                font-size: 1.4rem;
+            }
+            
+            .subheading {
+                font-size: 1.2rem;
+            }
+            
+            .countdown {
+                gap: 15px;
+            }
+            
+            .time-number {
+                font-size: 2rem;
+            }
+            
+            .cta-button {
+                padding: 20px 40px;
+                font-size: 1.4rem;
+                margin: 15px 10px;
+            }
+            
+            .purchase-notification {
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="urgency-banner">
+        Warning: High-Achievers Only - Price Increases in 48 Hours
+    </div>
+    
+    <section class="hero">
+        <div class="floating-elements">
+            <div class="money-icon">💼</div>
+            <div class="money-icon">💼</div>
+            <div class="money-icon">💼</div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>6 Mistakes <span class="highlight">Successful Guys Make</span> That Kill Attraction</h1>
+                <p class="hook">"Your success is sabotaging your dating life. Here's why."</p>
+                <p class="subheading">Why your corner office, network, and bank account are actually making women less attracted to you</p>
+                
+                <div class="mistakes-revealer">
+                    <h3>The 6 Fatal Attraction Killers</h3>
+                    <ul class="mistakes-list">
+                        <li class="mistake-item">
+                            <div class="mistake-title">Mistake #1: You're leading with your money</div>
+                            <div class="mistake-detail">Making every date an extravagant gesture, thinking that makes up for your lack of flirting, touching, and creating actual chemistry</div>
+                        </li>
+                        <li class="mistake-item">
+                            <div class="mistake-title">Mistake #2: You're namedropping constantly</div>
+                            <div class="mistake-detail">"I was just talking to my buddy who's a VP at..." - she doesn't care about your network flex</div>
+                        </li>
+                        <li class="mistake-item">
+                            <div class="mistake-title">Mistake #3: You make everything about work</div>
+                            <div class="mistake-detail">Your merger story isn't foreplay - learn to talk about literally anything else</div>
+                        </li>
+                        <li class="mistake-item">
+                            <div class="mistake-title">Mistake #4: You think money makes you immune to rejection</div>
+                            <div class="mistake-detail">But she'll still friendzone you if there's no real attraction</div>
+                        </li>
+                        <li class="mistake-item">
+                            <div class="mistake-title">Mistake #5: You assume success equals automatic attraction</div>
+                            <div class="mistake-detail">Your corner office doesn't make you charming - your personality does</div>
+                        </li>
+                        <li class="mistake-item">
+                            <div class="mistake-title">Mistake #6: You're too serious all the time</div>
+                            <div class="mistake-detail">Success is attractive, but so is knowing how to laugh and be spontaneous</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="result-highlight">
+                    <h4>The Truth: She Can Smell Desperation Even When It's Wrapped in a Rolex</h4>
+                    <p>Your success should enhance your attractiveness, not replace it entirely</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="system-section">
+        <div class="container">
+            <h2>How High-Achievers Become Irresistible</h2>
+            <p class="system-text">Learn how to leverage your success WITHOUT killing attraction. Master the art of being accomplished AND charming.</p>
+            
+            <div class="scarcity-timer">
+                <div class="timer-text">FLASH SALE ENDS IN:</div>
+                <div class="countdown">
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">47</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">23</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">45</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+                <p style="color: #dc2626; font-weight: 700; font-size: 1.1rem;">After timer expires: Price increases to $97</p>
+            </div>
+            
+            <div class="limited-spots">
+                <h4>LIMITED SPOTS REMAINING</h4>
+                <div class="spots-counter" id="spotsRemaining">18</div>
+                <p style="color: #f3f4f6;">high-achievers spots left</p>
+            </div>
+            
+            <div class="value-stack">
+                <h3>"High-Achiever's Attraction Blueprint"</h3>
+                
+                <div class="value-item">
+                    <div class="value-icon">📊</div>
+                    <div class="value-text">
+                        <strong>"Success Without Sabotage" Master Guide</strong><br>
+                        How to showcase achievement without killing chemistry ($47 Value)
+                    </div>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">💬</div>
+                    <div class="value-text">
+                        <strong>"Conversation Beyond Career" Framework</strong><br>
+                        What to talk about when work talk fails ($37 Value)
+                    </div>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">⚡</div>
+                    <div class="value-text">
+                        <strong>"Effortless Charm for Executives" System</strong><br>
+                        Stay serious at work, be playful everywhere else ($57 Value)
+                    </div>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">🎯</div>
+                    <div class="value-text">
+                        <strong>"Anti-Desperation Dating Protocol"</strong><br>
+                        How to date from abundance, not neediness ($47 Value)
+                    </div>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">🚀</div>
+                    <div class="value-text">
+                        <strong>BONUS: "Network Game" Templates</strong><br>
+                        When and how to mention your connections strategically ($27 Value)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="price-section">
+                <div class="original-price">Total Value: $215</div>
+                <div class="sale-price">Executive Access: $19</div>
+                <div class="price-note">Save $196 - High-Achiever Pricing</div>
+            </div>
+            
+            <a href="https://buy.stripe.com/4gM8wIeqycTg5Y6cZg6Vq0m" class="cta-button" target="_blank">GET EXECUTIVE ACCESS - $19</a>
+            
+            <div class="guarantee-section">
+                <h4>RISK-FREE SUCCESS GUARANTEE</h4>
+                <p>60-day money-back guarantee. If you don't see improved results with women while maintaining your professional edge, get every penny back.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="social-proof">
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-text">"I was making seven figures but getting friendzoned constantly. This guide taught me how to be successful AND attractive. Game changer for executives."</div>
+                <div class="testimonial-author">- Robert K., Investment Banker</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"Finally learned how to talk about something other than work. Women actually find me interesting now, not just impressive on paper."</div>
+                <div class="testimonial-author">- Michael D., Tech CEO</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"Stopped leading with my salary and started leading with my personality. The difference in how women respond is incredible."</div>
+                <div class="testimonial-author">- James T., Corporate Lawyer</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="final-urgency">
+        <div class="container">
+            <h2>Don't Let Success Sabotage Your Love Life</h2>
+            <p class="final-urgency-text">Every day you wait is another day your achievements are working against you instead of for you. Other successful men are learning these secrets right now.</p>
+            
+            <div class="limited-spots">
+                <h4>ONLY <span id="finalSpots">18</span> EXECUTIVE SPOTS LEFT</h4>
+                <p style="color: #dc2626; font-weight: 600;">This pricing will never be offered again</p>
+            </div>
+            
+            <a href="https://buy.stripe.com/4gM8wIeqycTg5Y6cZg6Vq0m" class="cta-button" target="_blank">SECURE MY SPOT NOW - $19</a>
+            
+            <p style="margin-top: 30px; color: #dc2626; font-size: 1.2rem; font-weight: 700;">Sale expires in <span id="final-hours" style="font-weight: bold;">47 hours</span></p>
+        </div>
+    </section>
+    
+    <!-- Purchase Notification Popup -->
+    <div class="purchase-notification" id="purchaseNotification">
+        <div>
+            <span class="notification-icon"></span>
+            <span class="buyer-info" id="buyerInfo">Robert from Manhattan just purchased</span>
+        </div>
+        <div class="purchase-details" id="purchaseTime">2 minutes ago</div>
+    </div>
+    
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            const hours = document.getElementById('hours');
+            const minutes = document.getElementById('minutes');
+            const seconds = document.getElementById('seconds');
+            const finalHours = document.getElementById('final-hours');
+            
+            let totalSeconds = 47 * 3600 + 23 * 60 + 45;
+            
+            setInterval(() => {
+                totalSeconds--;
+                
+                const h = Math.floor(totalSeconds / 3600);
+                const m = Math.floor((totalSeconds % 3600) / 60);
+                const s = totalSeconds % 60;
+                
+                if (hours) hours.textContent = h.toString().padStart(2, '0');
+                if (minutes) minutes.textContent = m.toString().padStart(2, '0');
+                if (seconds) seconds.textContent = s.toString().padStart(2, '0');
+                if (finalHours) finalHours.textContent = h;
+                
+                if (totalSeconds <= 0) {
+                    totalSeconds = 47 * 3600 + 23 * 60 + 45; // Reset
+                }
+            }, 1000);
+        }
+        
+        // Purchase notifications data
+        const purchaseData = [
+            { name: "Robert", city: "Manhattan" },
+            { name: "Michael", city: "San Francisco" },
+            { name: "David", city: "Chicago" },
+            { name: "James", city: "Boston" },
+            { name: "William", city: "LA" },
+            { name: "Thomas", city: "Seattle" },
+            { name: "Charles", city: "Miami" },
+            { name: "Christopher", city: "Austin" },
+            { name: "Daniel", city: "Denver" },
+            { name: "Matthew", city: "Atlanta" },
+            { name: "Anthony", city: "Dallas" },
+            { name: "Mark", city: "Phoenix" }
+        ];
+        
+        let spotsRemaining = 18;
